@@ -89,8 +89,8 @@ section .stories-container .img-text {
   text-align: center;
 }
 section .stories-container .img-text2 {
-  text-align: left;
-  text-align: center;
+  text-align: right;
+  align-items: center;
 }
 section .stories-container .left {
   padding: 6px;
