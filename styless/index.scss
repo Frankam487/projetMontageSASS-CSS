@@ -104,19 +104,22 @@ section {
     .stories-container {
         display: grid;
         grid-template-columns: 50% 50%;
+
         .img-text {
             text-align: left;
             text-align: center;
         }
+
         .img-text2 {
             text-align: right;
             align-items: center;
         }
+
         .left {
             padding: 6px;
 
             img {
-                object-fit: center/cover;
+                object-fit: center;
                 width: 70%;
             }
 

@@ -96,8 +96,8 @@ section .stories-container .left {
   padding: 6px;
 }
 section .stories-container .left img {
-  -o-object-fit: center/cover;
-     object-fit: center/cover;
+  -o-object-fit: center;
+     object-fit: center;
   width: 70%;
 }
 section .stories-container .right {
