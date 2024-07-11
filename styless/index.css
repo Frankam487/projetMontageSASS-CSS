@@ -1,0 +1,49 @@
+body {
+  background: url(../images/bg.jpg) center/cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+header {
+  margin-top: 160px;
+  text-align: center;
+  color: #fff;
+}
+header h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header .circle {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 40px 0;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  background: red;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  position: absolute;
+}
+header nav .right {
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header nav .right h4 {
+  cursor: pointer;
+}
+header nav .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .left i {
+  margin: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,61 @@
+$white: #fff;
+
+body {
+    background: url(../images/bg.jpg) center/cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+header {
+    // margin: 0 auto;
+    margin-top: 160px;
+    text-align: center;
+    color: $white;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .circle {
+        border: 1px solid $white;
+        padding: 10px;
+        border-radius: 50%;
+        margin: 40px 0;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        // background-color: rgba(196, 200, 201, 0.61);
+        background: red;
+        bottom: 0;
+        left: 20%;
+        right: 20%;
+        position: absolute;
+
+        .right {
+            display: flex;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            h4 {
+                cursor: pointer;
+            }
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                margin: 10px;
+                font-size: 1.3rem;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
