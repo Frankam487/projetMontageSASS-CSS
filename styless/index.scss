@@ -1,13 +1,17 @@
 $white: #fff;
+$black: black;
+
+* {
+    // border: 1px solid red;
+}
 
 body {
     background: url(../images/bg.jpg) center/cover;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 200vh;
 }
 
 header {
-    // margin: 0 auto;
     margin-top: 160px;
     text-align: center;
     color: $white;
@@ -28,11 +32,10 @@ header {
     nav {
         display: grid;
         grid-template-columns: 70% 30%;
-        // background-color: rgba(196, 200, 201, 0.61);
-        background: red;
+        background: rgba(196, 200, 201, 0.61);
         bottom: 0;
-        left: 20%;
-        right: 20%;
+        left: 11%;
+        right: 11%;
         position: absolute;
 
         .right {
@@ -56,6 +59,83 @@ header {
                 cursor: pointer;
             }
 
+        }
+    }
+}
+
+section {
+    top: 0;
+    left: 11%;
+    right: 11%;
+    position: absolute;
+    background: $white;
+    text-align: center;
+    // margin-top:500px;
+    overflow: hidden;
+
+    .img1 {
+        object-fit: center;
+        width: 90%;
+    }
+
+    p {
+        color: $black;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: $black;
+            border: 1px solid $black;
+        }
+
+    }
+
+    h1 {
+        margin-top: 100px;
+        text-transform: uppercase;
+    }
+
+    button {
+        padding: 10px 45px;
+        background: transparent;
+        border: 1px solid $black
+    }
+
+    .stories-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .img-text {
+            text-align: left;
+            text-align: center;
+        }
+        .img-text2 {
+            text-align: left;
+            text-align: center;
+        }
+        .left {
+            padding: 6px;
+
+            img {
+                object-fit: center/cover;
+                width: 70%;
+            }
+
+
+        }
+
+        .right {
+            padding: 6px;
+
+            img {
+                object-fit: center;
+                width: 70%;
+
+            }
+
+            p {
+                text-align: left;
+
+            }
         }
     }
 }

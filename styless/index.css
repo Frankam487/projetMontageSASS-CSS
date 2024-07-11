@@ -1,7 +1,7 @@
 body {
   background: url(../images/bg.jpg) center/cover;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: 200vh;
 }
 
 header {
@@ -23,10 +23,10 @@ header .circle {
 header nav {
   display: grid;
   grid-template-columns: 70% 30%;
-  background: red;
+  background: rgba(196, 200, 201, 0.61);
   bottom: 0;
-  left: 20%;
-  right: 20%;
+  left: 11%;
+  right: 11%;
   position: absolute;
 }
 header nav .right {
@@ -46,4 +46,68 @@ header nav .left i {
   margin: 10px;
   font-size: 1.3rem;
   cursor: pointer;
+}
+
+section {
+  top: 0;
+  left: 11%;
+  right: 11%;
+  position: absolute;
+  background: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+section .img1 {
+  -o-object-fit: center;
+     object-fit: center;
+  width: 90%;
+}
+section p {
+  color: black;
+}
+section p::after {
+  content: "";
+  position: absolute;
+  background: black;
+  border: 1px solid black;
+}
+section h1 {
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+section button {
+  padding: 10px 45px;
+  background: transparent;
+  border: 1px solid black;
+}
+section .stories-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+section .stories-container .img-text {
+  text-align: left;
+  text-align: center;
+}
+section .stories-container .img-text2 {
+  text-align: left;
+  text-align: center;
+}
+section .stories-container .left {
+  padding: 6px;
+}
+section .stories-container .left img {
+  -o-object-fit: center/cover;
+     object-fit: center/cover;
+  width: 70%;
+}
+section .stories-container .right {
+  padding: 6px;
+}
+section .stories-container .right img {
+  -o-object-fit: center;
+     object-fit: center;
+  width: 70%;
+}
+section .stories-container .right p {
+  text-align: left;
 }/*# sourceMappingURL=index.css.map */
